@@ -2,6 +2,8 @@
 
 [![NPM](https://nodei.co/npm/boolean-json-joi-schema.png)](https://npmjs.org/package/boolean-json-joi-schema)
 
+[![Build Status](https://travis-ci.org/RobertHerhold/boolean-json-joi-schema.svg?branch=master)](https://travis-ci.org/RobertHerhold/boolean-json-joi-schema)
+
 This package is a [Joi](https://github.com/hapijs/joi) port of [boolean-json-schema](https://github.com/kemitchell/boolean-json-schema.json). It exports a Joi schema that can be used to validate boolean JSON expressions.
 
 The simplest valid expression is just a variable name:
