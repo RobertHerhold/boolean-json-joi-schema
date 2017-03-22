@@ -1,0 +1,32 @@
+{
+  "name": "boolean-json-joi-schema",
+  "version": "1.0.0",
+  "description": "Joi Schema for boolean expressions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertHerhold/boolean-json-joi-schema.git"
+  },
+  "keywords": [
+    "Joi",
+    "JSON",
+    "schema",
+    "boolean"
+  ],
+  "author": "Robert Herhold <reherhold@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobertHerhold/boolean-json-joi-schema/issues"
+  },
+  "homepage": "https://github.com/RobertHerhold/boolean-json-joi-schema#readme",
+  "dependencies": {
+    "joi": "^10.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
