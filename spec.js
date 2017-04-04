@@ -39,6 +39,13 @@ describe('Joi Schema', function() {
             });
         });
 
+        it('should not allow a disjunction with a sparse array', function() {
+            Joi.validate({ or: ['a', undefined] }, schema, function(err) {
+                // Index 1 b/c the `disjunction` schema is checked second
+                expect(err.details[1].message).to.equal('"or" must not be a sparse array');
+            });
+        });
+
         it('should not allow keys other than "or"', function() {
             Joi.validate({ foo: ['a'] }, schema, function(err) {
                 // Index 1 b/c the `disjunction` schema is checked second
@@ -55,6 +62,13 @@ describe('Joi Schema', function() {
         });
 
         it('should not allow a conjunction with fewer than 2 elements', function() {
+            Joi.validate({ and: ['a', undefined] }, schema, function(err) {
+                // Index 2 b/c the `conjunction` schema is checked third
+                expect(err.details[2].message).to.equal('"and" must not be a sparse array');
+            });
+        });
+
+        it('should not allow a conjunction with any undefined values', function() {
             Joi.validate({ and: ['a'] }, schema, function(err) {
                 // Index 2 b/c the `conjunction` schema is checked third
                 expect(err.details[2].message).to.equal('"and" must contain at least 2 items');
