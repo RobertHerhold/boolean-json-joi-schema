@@ -1,6 +1,6 @@
 {
   "name": "boolean-json-joi-schema",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Joi Schema for boolean expressions",
   "main": "index.js",
   "scripts": {
