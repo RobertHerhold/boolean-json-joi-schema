@@ -14,7 +14,8 @@
     "Joi",
     "JSON",
     "schema",
-    "boolean"
+    "boolean",
+    "boolean-json"
   ],
   "author": "Robert Herhold <reherhold@gmail.com>",
   "license": "MIT",
